@@ -9,7 +9,7 @@
 
     <style name="AppTheme.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Attribut-atribut tema disesuaikan di sini -->
-        <item name="colorPrimary">@color/primarydark</item>
+        <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary</item>
         <item name="colorAccent">@color/primarylight</item>
     </style>
