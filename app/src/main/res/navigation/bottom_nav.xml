@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/berandaFragment">
+
+    <fragment
+        android:id="@+id/berandaFragment"
+        android:name="com.laznas.mylmi.BerandaFragment"
+        android:label="Beranda"
+        tools:layout="@layout/fragment_beranda" />
+    <fragment
+        android:id="@+id/penyaluranFragment"
+        android:name="com.laznas.mylmi.PenyaluranFragment"
+        android:label="Penyaluran"
+        tools:layout="@layout/fragment_penyaluran" />
+    <fragment
+        android:id="@+id/EMajalahFragment"
+        android:name="com.laznas.mylmi.EMajalahFragment"
+        android:label="E-Majalah"
+        tools:layout="@layout/fragment_e_majalah" />
+    <fragment
+        android:id="@+id/akunFragment"
+        android:name="com.laznas.mylmi.AkunFragment"
+        android:label="Akun"
+        tools:layout="@layout/fragment_akun" />
+</navigation>

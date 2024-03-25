@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/berandaFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Beranda"
+        android:icon="@drawable/beranda"/>
+    <item
+        android:id="@+id/penyaluranFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Penyaluran"
+        android:icon="@drawable/penyaluran"/>
+    <item
+        android:id="@+id/EMajalahFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="E-Majalah"
+        android:icon="@drawable/emajalah"/>
+    <item
+        android:id="@+id/akunFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Akun"
+        android:icon="@drawable/akun"/>
+</menu>
