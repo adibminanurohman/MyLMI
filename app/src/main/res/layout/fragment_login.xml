@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loginbg1"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loginbg2"
+        android:layout_alignParentStart="true"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loginbg3"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loginbg4"
+        android:layout_alignParentBottom="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="62dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Lorem ipsum"
+            android:textColor="@color/primary"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/deskrip_login"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Lorem ipsum dolor sit amet,consecture adipsdih knsd"
+            android:layout_below="@id/title_login"/>
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/bgemail"
+            android:layout_marginHorizontal="30dp"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="92dp"
+            android:layout_below="@id/deskrip_login"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/edt_sandi"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_below="@id/edt_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bgsandi"
+            android:hint="Sandi"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:paddingHorizontal="20dp" />
+
+        <TextView
+            android:id="@+id/lupa_kata_sandi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_sandi"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Lupa kata sandi"
+            android:textSize="14sp"
+            android:textColor="@color/primary"/>
+
+        <Button
+            android:id="@+id/btn_masuk"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/lupa_kata_sandi"
+            android:text="Masuk"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:background="@drawable/button_background_masuk"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_masuk"
+            android:text="Buat akun baru"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="14sp"
+            android:textColor="@color/primary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atau lanjutkan dengan"
+            android:layout_above="@id/li_googlefb"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_semibold"/>
+
+        <LinearLayout
+            android:id="@+id/li_googlefb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true">
+
+            <ImageButton
+                android:id="@+id/btn_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:src="@drawable/icgoogle"
+                android:background="@drawable/bggooglefb"/>
+            <ImageButton
+                android:id="@+id/btn_fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:src="@drawable/icfb"
+                android:background="@drawable/bggooglefb"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

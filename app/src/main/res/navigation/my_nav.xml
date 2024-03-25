@@ -23,9 +23,9 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.laznas.mylmi.HomeFragment"
+        android:name="com.laznas.mylmi.LoginFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_login" />
     <fragment
         android:id="@+id/onBoarding1Fragment"
         android:name="com.laznas.mylmi.OnBoarding1Fragment"

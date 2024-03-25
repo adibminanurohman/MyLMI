@@ -4,5 +4,7 @@
         <item>@font/manrope</item>
         <item>@font/manrope_bold</item>
         <item>@font/manrope_semibold</item>
+        <item>@font/poppins_bold</item>
+        <item>@font/poppins_semibold</item>
     </array>
 </resources>
