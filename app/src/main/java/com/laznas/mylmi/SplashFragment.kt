@@ -4,14 +4,13 @@ import android.content.Context
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.Animation
-import android.view.animation.AnimationUtils
-import android.widget.TextView
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.ActionBar
 
 class SplashFragment : Fragment() {
 
@@ -20,8 +19,10 @@ class SplashFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        // Memuat tata letak untuk fragmen ini
         val view = inflater.inflate(R.layout.fragment_splash, container, false)
+
+        // Menyembunyikan action bar
+        hideActionBar()
 
         // Handler untuk menunda navigasi ke fragmen selanjutnya (onboardingFragment)
         Handler(Looper.getMainLooper()).postDelayed({
@@ -45,5 +46,11 @@ class SplashFragment : Fragment() {
         val sharedPreferences = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
         // Mengembalikan nilai boolean yang menunjukkan apakah onboarding sudah selesai atau belum
         return sharedPreferences.getBoolean("finshed", false)
+    }
+
+    // Fungsi untuk menyembunyikan action bar
+    private fun hideActionBar() {
+        val actionBar: ActionBar? = (activity as? AppCompatActivity)?.supportActionBar
+        actionBar?.hide()
     }
 }

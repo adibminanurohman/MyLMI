@@ -5,4 +5,10 @@
     <color name="background">#FEFEFE</color>
     <color name="primarylight">#9DC08B</color>
     <color name="primary">#26C168</color>
+    <color name="green_200">#B7FF9D</color>
+    <color name="green_500">#65FF3B</color>
+    <color name="green_700">#7CFB2D</color>
+    <color name="blue_200">#39A0FF</color>
+    <color name="blue_700">#3964FF</color>
+
 </resources>

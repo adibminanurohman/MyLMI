@@ -62,7 +62,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:background="@drawable/bggooglefb"
-                android:src="@drawable/icgoogle" />
+                android:src="@drawable/icgoogle"
+                android:elevation="8dp"
+                android:translationZ="4dp"
+                android:foreground="?attr/selectableItemBackground"/>
 
             <ImageButton
                 android:id="@+id/btn_fb"
@@ -70,11 +73,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:background="@drawable/bggooglefb"
-                android:src="@drawable/icfb" />
+                android:src="@drawable/icfb"
+                android:elevation="8dp"
+                android:translationZ="4dp"
+                android:foreground="?attr/selectableItemBackground"/>
         </LinearLayout>
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/sudah_memiliki_akun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/btn_daftar"
@@ -89,56 +95,56 @@
         <Button
             android:id="@+id/btn_daftar"
             android:layout_width="match_parent"
-            android:layout_height="64dp"
+            android:layout_height="45dp"
             android:layout_below="@id/edt_konfirmSandiRegister"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="50dp"
             android:background="@drawable/button_background_masuk"
             android:text="Daftar"
             android:textAllCaps="false"
-            android:textSize="20sp" />
+            android:textSize="14sp" />
 
         <EditText
             android:id="@+id/edt_konfirmSandiRegister"
             android:layout_width="match_parent"
-            android:layout_height="64dp"
+            android:layout_height="45dp"
             android:layout_below="@id/edt_sandiRegister"
             android:layout_centerHorizontal="true"
             android:layout_marginHorizontal="30dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/bgsandi"
             android:hint="Konfirmasi kata sandi"
-            android:inputType="text"
+            android:inputType="text|textPassword"
             android:paddingHorizontal="20dp"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <EditText
             android:id="@+id/edt_emailRegister"
             android:layout_width="match_parent"
-            android:layout_height="64dp"
+            android:layout_height="45dp"
             android:layout_below="@id/deskrip_buat_akun"
             android:layout_centerHorizontal="true"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="92dp"
             android:background="@drawable/bgemail"
             android:hint="Email"
-            android:inputType="text"
+            android:inputType="text|textEmailAddress"
             android:paddingHorizontal="20dp"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <EditText
             android:id="@+id/edt_sandiRegister"
             android:layout_width="match_parent"
-            android:layout_height="64dp"
+            android:layout_height="45dp"
             android:layout_below="@id/edt_emailRegister"
             android:layout_centerHorizontal="true"
             android:layout_marginHorizontal="30dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/bgsandi"
             android:hint="Sandi"
-            android:inputType="text"
+            android:inputType="text|textPassword"
             android:paddingHorizontal="20dp"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/title_buat_akun"
