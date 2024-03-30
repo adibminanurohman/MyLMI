@@ -4,10 +4,12 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.laznas.mylmi.R
 import com.laznas.mylmi.model.ResponseMagazinesItem
 
@@ -18,6 +20,7 @@ class MagazinesAdapter (
     class MyViewHolder(val view: View): RecyclerView.ViewHolder(view){
         val tvTitleMagazines = view.findViewById<TextView>(R.id.tv_title_magazines)
         val tvYearMagazines = view.findViewById<TextView>(R.id.tv_year_magazines)
+        val ivMagazines = view.findViewById<ImageView>(R.id.img_magazines)
         val cvMgazines = view.findViewById<CardView>(R.id.cvMagazines)
     }
 
@@ -30,6 +33,12 @@ class MagazinesAdapter (
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.tvTitleMagazines.text = dataList.get(position).title
         holder.tvYearMagazines.text = dataList.get(position).release
+
+        // Load image using Glide
+        Glide.with(context)
+            .load(dataList.get(position).image)
+            .placeholder(R.drawable.magazineplaceholder)
+            .into(holder.ivMagazines)
 
         holder.cvMgazines.setOnClickListener {
             Toast.makeText(context, "" + dataList.get(position).title, Toast.LENGTH_SHORT).show()
