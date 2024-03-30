@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.laznas.mylmi.SplashFragment"
+        android:name="com.laznas.mylmi.fragment.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
@@ -23,7 +23,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.laznas.mylmi.LoginFragment"
+        android:name="com.laznas.mylmi.fragment.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -32,7 +32,7 @@
     </fragment>
     <fragment
         android:id="@+id/onBoarding1Fragment"
-        android:name="com.laznas.mylmi.OnBoarding1Fragment"
+        android:name="com.laznas.mylmi.fragment.OnBoarding1Fragment"
         android:label="fragment_on_boarding1"
         tools:layout="@layout/fragment_on_boarding1" >
         <action
@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.laznas.mylmi.RegisterFragment"
+        android:name="com.laznas.mylmi.fragment.RegisterFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" >
         <action

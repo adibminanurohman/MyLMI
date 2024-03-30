@@ -1,4 +1,4 @@
-package com.laznas.mylmi
+package com.laznas.mylmi.fragment
 
 import android.content.Context
 import android.os.Bundle
@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.ActionBar
+import com.laznas.mylmi.R
 
 class SplashFragment : Fragment() {
 

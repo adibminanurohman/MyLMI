@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/berandaFragment"
-        android:name="com.laznas.mylmi.BerandaFragment"
+        android:name="com.laznas.mylmi.fragment.BerandaFragment"
         android:label="Beranda"
         tools:layout="@layout/fragment_beranda" />
     <fragment
         android:id="@+id/penyaluranFragment"
-        android:name="com.laznas.mylmi.PenyaluranFragment"
+        android:name="com.laznas.mylmi.fragment.PenyaluranFragment"
         android:label="Penyaluran"
         tools:layout="@layout/fragment_penyaluran" />
     <fragment
         android:id="@+id/EMajalahFragment"
-        android:name="com.laznas.mylmi.EMajalahFragment"
+        android:name="com.laznas.mylmi.fragment.EMajalahFragment"
         android:label="E-Majalah"
         tools:layout="@layout/fragment_e_majalah" />
     <fragment
         android:id="@+id/akunFragment"
-        android:name="com.laznas.mylmi.AkunFragment"
+        android:name="com.laznas.mylmi.fragment.AkunFragment"
         android:label="Akun"
         tools:layout="@layout/fragment_akun" />
 </navigation>

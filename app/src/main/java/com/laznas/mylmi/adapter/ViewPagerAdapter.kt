@@ -1,4 +1,4 @@
-package com.laznas.mylmi
+package com.laznas.mylmi.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

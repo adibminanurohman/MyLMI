@@ -1,10 +1,11 @@
-package com.laznas.mylmi
+package com.laznas.mylmi.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.laznas.mylmi.R
 
 class PenyaluranFragment : Fragment() {
 

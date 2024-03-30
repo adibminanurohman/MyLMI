@@ -1,9 +1,10 @@
-package com.laznas.mylmi
+package com.laznas.mylmi.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.laznas.mylmi.R
 
 class OnBoardingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
