@@ -14,6 +14,8 @@ import com.laznas.mylmi.network.ApiClient
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.text.SimpleDateFormat
+import java.util.*
 
 private var _binding: FragmentEMajalahBinding? = null
 private val binding get() = _binding!!
@@ -57,7 +59,10 @@ class EMajalahFragment : Fragment() {
             ) {
                 if (response.isSuccessful) {
                     val data = response.body()
-                    data?.let { setDataToAdapter(it) }
+                    if (data != null) {
+                        val filteredData = filterMagazinesByDate(data)
+                        setDataToAdapter(filteredData)
+                    }
                 }
             }
 
@@ -65,6 +70,25 @@ class EMajalahFragment : Fragment() {
                 Log.d("error", t.stackTraceToString())
             }
         })
+    }
+
+    private fun filterMagazinesByDate(data: ArrayList<ResponseMagazinesItem>): ArrayList<ResponseMagazinesItem> {
+        val filteredList = ArrayList<ResponseMagazinesItem>()
+        val sdf = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+        val calendarStart = Calendar.getInstance()
+        calendarStart.time = sdf.parse("2024-01-01") ?: Date()
+        val calendarEnd = Calendar.getInstance()
+        calendarEnd.time = sdf.parse("2024-12-01") ?: Date()
+
+        for (item in data) {
+            val calendarItem = Calendar.getInstance()
+            calendarItem.time = item.release?.let { sdf.parse(it) } ?: Date()
+            if (calendarItem in calendarStart..calendarEnd) {
+                filteredList.add(item)
+            }
+        }
+
+        return filteredList
     }
 
     private fun setDataToAdapter(data: ArrayList<ResponseMagazinesItem>) {
