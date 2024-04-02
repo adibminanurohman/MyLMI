@@ -1,42 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="119dp"
-    android:layout_height="205dp"
+    android:layout_width="match_parent"
+    android:layout_height="136dp"
+    android:layout_marginVertical="10dp"
+    app:cardUseCompatPadding="false"
+    app:cardElevation="0dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardElevation="10dp"
-    app:cardCornerRadius="8dp"
-    android:layout_margin="10dp"
     android:id="@+id/cvMagazines">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/img_magazines"
-            android:layout_width="match_parent"
-            android:layout_height="168dp"
-            android:src="@drawable/dumy_majalah" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="96dp"
+            android:layout_height="136dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="0dp"
+            app:cardUseCompatPadding="false">
 
-        <TextView
-            android:id="@+id/tv_title_magazines"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="4dp"
-            android:fontFamily="@font/poppins"
-            android:maxLines="1"
-            android:ellipsize="end"
-            android:text="Selalu Ada Berkah di Balik Musibah"
-            android:textSize="12sp" />
+            <ImageView
+                android:id="@+id/img_magazines"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/dumy_majalah" />
+        </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:id="@+id/tv_year_magazines"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="4dp"
-            android:text="2018-01-01"
-            android:textSize="10sp"
-            android:maxLines="1"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_title_magazines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_semibold"
+                android:maxLines="1"
+                android:text="Selalu Ada Berkah di Balik Musibah"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_year_magazines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:maxLines="1"
+                android:text="2018-01-01"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_description_magazines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="14sp"
+                android:text="Temukan hikmah dan kekuatan di balik setiap kesulitan dalam majalah ini. Temukan bagaimana musibah dapat membuka jalan menuju kebahagiaan dan pembelajaran berharga." />
+        </LinearLayout>
+
     </LinearLayout>
 </androidx.cardview.widget.CardView>

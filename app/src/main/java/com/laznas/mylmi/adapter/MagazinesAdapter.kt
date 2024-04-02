@@ -21,6 +21,7 @@ class MagazinesAdapter (
         val tvTitleMagazines = view.findViewById<TextView>(R.id.tv_title_magazines)
         val tvYearMagazines = view.findViewById<TextView>(R.id.tv_year_magazines)
         val ivMagazines = view.findViewById<ImageView>(R.id.img_magazines)
+        val tvDescription = view.findViewById<TextView>(R.id.tv_description_magazines)
         val cvMgazines = view.findViewById<CardView>(R.id.cvMagazines)
     }
 
@@ -33,6 +34,7 @@ class MagazinesAdapter (
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.tvTitleMagazines.text = dataList.get(position).title
         holder.tvYearMagazines.text = dataList.get(position).release
+        holder.tvDescription.text = dataList.get(position).description
 
         // Load image using Glide
         Glide.with(context)
