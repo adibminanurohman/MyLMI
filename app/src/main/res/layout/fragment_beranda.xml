@@ -21,6 +21,7 @@
         android:id="@+id/li_slider"
         android:layout_width="match_parent"
         android:layout_height="220dp"
+        android:layout_marginTop="16dp"
         android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@id/tb_beranda">
 
@@ -46,7 +47,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="212dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@id/tv_kategori_program">
 
@@ -56,6 +57,7 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cv_infaq"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
                 android:layout_margin="5dp"
@@ -88,6 +90,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cv_wakaf"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
                 android:layout_centerHorizontal="true"
@@ -119,6 +122,7 @@
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
+                android:id="@+id/cv_zakat"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
                 android:layout_alignParentEnd="true"
@@ -153,9 +157,11 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cv_qurban"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
                 android:layout_margin="5dp"
@@ -188,6 +194,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cv_konsultasi_syariah"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
                 android:layout_centerHorizontal="true"
@@ -222,6 +229,7 @@
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
+                android:id="@+id/cv_lihat_semua"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
                 android:layout_alignParentEnd="true"

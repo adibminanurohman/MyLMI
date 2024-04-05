@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.laznas.mylmi.R
 import com.laznas.mylmi.adapter.SliderAdapter
@@ -43,6 +44,35 @@ class BerandaFragment : Fragment() {
         val layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         binding.rvSlider.layoutManager = layoutManager
 
+        // Set OnClickListener untuk card "Infaq"
+        binding.cvInfaq.setOnClickListener {
+            // Dapatkan NavController
+            val navController = Navigation.findNavController(view)
+            // Navigasi ke InfaqFragment
+            navController.navigate(R.id.action_berandaFragment_to_infaqFragment)
+        }
+        // Set OnClickListener untuk card "Infaq"
+        binding.cvWakaf.setOnClickListener {
+            // Dapatkan NavController
+            val navController = Navigation.findNavController(view)
+            // Navigasi ke InfaqFragment
+            navController.navigate(R.id.action_berandaFragment_to_wakafFragment)
+        }
+        // Set OnClickListener untuk card "Infaq"
+        binding.cvZakat.setOnClickListener {
+            // Dapatkan NavController
+            val navController = Navigation.findNavController(view)
+            // Navigasi ke InfaqFragment
+            navController.navigate(R.id.action_berandaFragment_to_zakatFragment)
+        }
+        // Set OnClickListener untuk card "Infaq"
+        binding.cvQurban.setOnClickListener {
+            // Dapatkan NavController
+            val navController = Navigation.findNavController(view)
+            // Navigasi ke InfaqFragment
+            navController.navigate(R.id.action_berandaFragment_to_qurbanFragment)
+        }
+
         remoteGetSlider()
     }
 
@@ -77,5 +107,6 @@ class BerandaFragment : Fragment() {
     private fun setDataToAdapter(data: ArrayList<ResponseFundraisingsItem>){
         adapter.setData(data)
     }
+
 
 }

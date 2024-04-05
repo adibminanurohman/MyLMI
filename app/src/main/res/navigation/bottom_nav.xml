@@ -9,7 +9,20 @@
         android:id="@+id/berandaFragment"
         android:name="com.laznas.mylmi.fragment.BerandaFragment"
         android:label="Beranda"
-        tools:layout="@layout/fragment_beranda" />
+        tools:layout="@layout/fragment_beranda" >
+        <action
+            android:id="@+id/action_berandaFragment_to_infaqFragment"
+            app:destination="@id/infaqFragment" />
+        <action
+            android:id="@+id/action_berandaFragment_to_wakafFragment"
+            app:destination="@id/wakafFragment" />
+        <action
+            android:id="@+id/action_berandaFragment_to_zakatFragment"
+            app:destination="@id/zakatFragment" />
+        <action
+            android:id="@+id/action_berandaFragment_to_qurbanFragment"
+            app:destination="@id/qurbanFragment" />
+    </fragment>
     <fragment
         android:id="@+id/penyaluranFragment"
         android:name="com.laznas.mylmi.fragment.PenyaluranFragment"
@@ -25,4 +38,24 @@
         android:name="com.laznas.mylmi.fragment.AkunFragment"
         android:label="Akun"
         tools:layout="@layout/fragment_akun" />
+    <fragment
+        android:id="@+id/infaqFragment"
+        android:name="com.laznas.mylmi.fragment.InfaqFragment"
+        android:label="fragment_infaq"
+        tools:layout="@layout/fragment_infaq" />
+    <fragment
+        android:id="@+id/wakafFragment"
+        android:name="com.laznas.mylmi.fragment.WakafFragment"
+        android:label="fragment_wakaf"
+        tools:layout="@layout/fragment_wakaf" />
+    <fragment
+        android:id="@+id/zakatFragment"
+        android:name="com.laznas.mylmi.fragment.ZakatFragment"
+        android:label="fragment_zakat"
+        tools:layout="@layout/fragment_zakat" />
+    <fragment
+        android:id="@+id/qurbanFragment"
+        android:name="com.laznas.mylmi.fragment.QurbanFragment"
+        android:label="fragment_qurban"
+        tools:layout="@layout/fragment_qurban" />
 </navigation>

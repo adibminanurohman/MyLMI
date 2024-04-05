@@ -75,4 +75,8 @@ dependencies {
     //viewpager2
     implementation ("androidx.viewpager2:viewpager2:1.0.0")
 
+    //web view
+    implementation ("androidx.webkit:webkit:1.10.0")
+
+
 }
