@@ -18,6 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"/>
 
     <LinearLayout
+        android:id="@+id/li_slider"
         android:layout_width="match_parent"
         android:layout_height="220dp"
         android:orientation="horizontal"
@@ -32,6 +33,230 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/customToolbar"
             tools:listitem="@layout/item_rv_slider" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_kategori_program"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kategori Program"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/li_slider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="212dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tv_kategori_program">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_margin="5dp"
+                android:layout_alignParentStart="true"
+                app:cardCornerRadius="6dp"
+                app:cardUseCompatPadding="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ic_infakin"
+                        android:layout_width="77dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_infakin" />
+
+                    <TextView
+                        android:id="@+id/tv_infakin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="12dp"
+                        android:text="Infaq" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="6dp"
+                android:layout_margin="5dp"
+                app:cardUseCompatPadding="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ic_wakafo"
+                        android:layout_width="77dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_wakafo" />
+
+                    <TextView
+                        android:id="@+id/tv_wakafo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="12dp"
+                        android:text="Wakaf" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_alignParentEnd="true"
+                app:cardCornerRadius="6dp"
+                android:layout_margin="5dp"
+                app:cardUseCompatPadding="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ic_zakato"
+                        android:layout_width="77dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_zakato" />
+
+                    <TextView
+                        android:id="@+id/tv_zakato"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="12dp"
+                        android:text="Zakat" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_margin="5dp"
+                android:layout_alignParentStart="true"
+                app:cardCornerRadius="6dp"
+                app:cardUseCompatPadding="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ic_qurbanholic"
+                        android:layout_width="77dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_qurbanholic" />
+
+                    <TextView
+                        android:id="@+id/tv_qurbanholic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="12dp"
+                        android:text="Qurban" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="6dp"
+                android:layout_margin="5dp"
+                app:cardUseCompatPadding="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ic_konsultasi_syariah"
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_konsultasi_syariah" />
+
+                    <TextView
+                        android:id="@+id/tv_konsultasi_syariah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:maxLines="2"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="12dp"
+                        android:text="Konsultasi Syariah" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_alignParentEnd="true"
+                app:cardCornerRadius="6dp"
+                android:layout_margin="5dp"
+                app:cardUseCompatPadding="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ic_lihat_semua"
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_lihat_semua" />
+
+                    <TextView
+                        android:id="@+id/tv_lihat_semua"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:maxLines="2"
+                        android:textSize="12dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins"
+                        android:text="Lihat        Semua" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,7 +6,7 @@
     app:cardUseCompatPadding="false"
     app:cardElevation="0dp"
     app:cardCornerRadius="20dp"
-    android:layout_margin="10dp"
+    android:layout_marginRight="10dp"
     android:id="@+id/cv_ItemSlider">
 
     <ImageView
