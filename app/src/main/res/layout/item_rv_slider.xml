@@ -3,13 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="354dp"
     android:layout_height="198dp"
-    app:cardElevation="10dp"
+    app:cardUseCompatPadding="false"
+    app:cardElevation="0dp"
     app:cardCornerRadius="20dp"
     android:layout_margin="10dp"
     android:id="@+id/cv_ItemSlider">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/iv_slider"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
